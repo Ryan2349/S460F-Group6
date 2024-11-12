@@ -1,3 +1,5 @@
+export PATH=$PATH:./libsvm-3.35
+
 export FORMAT_DATA=./preprocessing/prepare-data.py
 
 export TRAIN_DOCS=./data/webkb-train-stemmed.txt
