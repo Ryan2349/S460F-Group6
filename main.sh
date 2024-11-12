@@ -1,4 +1,4 @@
 . config.sh
 python $FORMAT_DATA
-svm-train -t 0 $LIBSVM_TRAIN_DOCS
+svm-train -t 0 -c 1 -g 1 $LIBSVM_TRAIN_DOCS $LIBSVM_MODEL
 svm-predict $LIBSVM_TEST_DOCS $LIBSVM_MODEL $PREDICTION_RESULTS
